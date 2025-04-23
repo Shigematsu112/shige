@@ -8,16 +8,16 @@ public class Assignment {
         short shortVar = 100;
         int intVar = 1000;
         long longVar = 10000L;
-        float floatVar = 9.5f;
+        float floatVar = 0.0f;
         double doubleVar = 10.5;
-        char charVar = 'a';
-        String stringVar = "ハロー";
-        boolean booleanVar = true;
+        char charVar = '\u0000';
+        String stringVar = null;
+        boolean booleanVar = false;
 
         System.out.println(byteVar + shortVar + intVar + longVar);      // 11110
         System.out.println(byteVar + shortVar + intVar + longVar);      // 11110
-        System.out.println(byteVar + shortVar);                         // 20
-        System.out.println(byteVar + shortVar);                         // 20
+        System.out.println(floatVar + doubleVar);                       // 20.0 
+        System.out.println(floatVar + doubleVar);                       // 20.0
         System.out.println(charVar);                                    // a
         System.out.println(stringVar);                                  // ハロー
         System.out.println(booleanVar);                                 // true
@@ -67,9 +67,9 @@ public class Assignment {
         System.out.println("BMIは" + String.format("%.1f", bmi) + "です");
 
         // 【9】自己代入して加算
-        age += 24;
-        height += 168.5;
-        weight += 64.2;
+        age += age;       // → 48
+        height += height; // → 337.0
+        weight += weight; // → 128.4
         bmi = weight / ((height / 100) * (height / 100));
         System.out.println("初めまして" + name + "です");
         System.out.println("年齢は" + age + "歳です");
@@ -77,9 +77,14 @@ public class Assignment {
         System.out.println("体重は" + weight + "kgです");
         System.out.println("好きな食べ物は" + favoriteFood + "です");
         System.out.println("BMIは" + String.format("%.2f", bmi) + "です");
+        
+        age = 24;
+        height = 168.5;
+        weight = 64.2;
+        bmi = weight / ((height / 100) * (height / 100));
 
         // 【10】25歳以上かどうか（ifなし）
-        System.out.println(age >= 25);
+        System.out.println(age >= 25);      // false（正しい）
 
         // 【11】年齢・身長・体重を文字列に変換し連結
         String result = String.valueOf(age) + String.valueOf(height) + String.valueOf(weight);
