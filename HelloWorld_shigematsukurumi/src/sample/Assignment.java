@@ -4,16 +4,25 @@ public class Assignment {
 
     public static void main(String[] args) {
         // 【1〜4】変数の宣言・初期化・代入・出力
-        byte byteVar = 10;
-        short shortVar = 100;
-        int intVar = 1000;
-        long longVar = 10000L;
+        byte byteVar = 0;
+        short shortVar = 0;
+        int intVar = 0;
+        long longVar = 0L;
         float floatVar = 0.0f;
-        double doubleVar = 10.5;
+        double doubleVar = 0.0;
         char charVar = '\u0000';
         String stringVar = null;
         boolean booleanVar = false;
-
+        byteVar =10;//代入
+        shortVar=100;//代入
+        intVar=1000;//代入
+        longVar=10000;//代入
+        doubleVar=10.5;//代入
+        charVar='a';//代入
+        stringVar="ハロー";//代入
+        booleanVar=true;//代入
+        
+        
         System.out.println(byteVar + shortVar + intVar + longVar);      // 11110
         System.out.println(byteVar + shortVar + intVar + longVar);      // 11110
         System.out.println(floatVar + doubleVar);                       // 20.0 
