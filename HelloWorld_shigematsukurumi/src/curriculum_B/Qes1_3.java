@@ -69,7 +69,7 @@ public class Qes1_3 {
                 System.out.println("勝つまでにかかった合計回数は" + count + "回です");
                 break;
             } else {
-                System.out.println("俺の勝ち！");
+                System.out.println("俺の勝ち！");　
                 if (cpuHand == 0) {
                     System.out.println("負けは次につながるチャンスです！");
                     System.out.println("ネバーギブアップ！");
