@@ -11,7 +11,6 @@ public class Qes1_3 {
         String username; // ユーザー名格納変数
 
         // --- ユーザー名入力 ---
-        System.out.print("ユーザー名を入力してください: ");
         username = scanner.nextLine();
 
         // --- ユーザー名のチェック ---
@@ -39,11 +38,11 @@ public class Qes1_3 {
         // --- じゃんけん開始 ---
         Random random = new Random();
         int count = 0; // 試行回数
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         while (true) {
             System.out.print("じゃんけんをしましょう！（0:グー, 1:チョキ, 2:パー）: ");
-            int userHand = input.nextInt(); // ユーザーの手
+            int userHand = scanner.nextInt(); // ユーザーの手
             int cpuHand = random.nextInt(3); // コンピュータの手
             count++; // カウント
 
@@ -69,7 +68,7 @@ public class Qes1_3 {
                 System.out.println("勝つまでにかかった合計回数は" + count + "回です");
                 break;
             } else {
-                System.out.println("俺の勝ち！");　
+                System.out.println("俺の勝ち！");
                 if (cpuHand == 0) {
                     System.out.println("負けは次につながるチャンスです！");
                     System.out.println("ネバーギブアップ！");
@@ -85,6 +84,5 @@ public class Qes1_3 {
         }
 
         scanner.close();
-        input.close();
     }
 }
