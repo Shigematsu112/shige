@@ -1,6 +1,6 @@
 package curriculum_New_question;
 
-import java.util.Random;
+import java.util.Random; // ← クラスの外に移動
 
 public class Curriculum_New_1_18 {
 
@@ -23,7 +23,7 @@ public class Curriculum_New_1_18 {
     }
 
     public static int[] generateRandoms(int count) {
-        Random rand = new Random();
+        Random rand = new Random(); // ← importに対応
         int[] result = new int[count];
         for (int i = 0; i < count; i++) {
             int num;
@@ -52,7 +52,7 @@ public class Curriculum_New_1_18 {
         return result;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // ← 1つに統合
         printMessage("Hello", 11);
         multiply(3, 4);
         printArray(new int[]{1, 2, 3});
