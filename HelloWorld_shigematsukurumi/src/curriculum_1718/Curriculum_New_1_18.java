@@ -1,4 +1,7 @@
 package curriculum_1718;
+
+import java.util.Random;
+
 public class Curriculum_New_1_18 {
 
     // Q1
