@@ -1,12 +1,10 @@
 package K_23.curriculum_New_23;
 
-import curriculum_New_question.curriculum_New_23;
-
 public class Main {
     public static void main(String[] args) {
-    	
-        // curriculum_New_23 のオブジェクトを作成
-        curriculum_New_23 lion = new curriculum_New_23();
+
+        // Animal のオブジェクトを作成
+        Animal lion = new Animal();
 
         // setterで値をセット
         lion.setName("ライオン");
